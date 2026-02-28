@@ -38,8 +38,6 @@ cd home-server-remote-sensing
 pip install -r requirements.txt
 ```
 
-*(※ `requirements.txt` には以下が含まれていることを想定しています: `pystac-client`, `planetary-computer`, `rasterio`, `matplotlib`, `geopy`, `requests`, `tqdm`, `numpy`, `pillow`)*
-
 ---
 
 ## 📖 Usage (使い方)
@@ -82,15 +80,6 @@ python3 satellite_analyzer.py my_hometown
 処理が成功すると、同じディレクトリに以下の画像ファイルが生成されます。
 - `my_hometown_NDVI_result.png` (NDVIのヒートマップ)
 - `my_hometown_MNDWI_result.png` (MNDWIのヒートマップ ※B03とB11が存在する場合)
-
----
-
-## 🖼️ Sample Output (出力サンプル)
-
-| 元のデータ (16bit Raw) | 解析後: NDVI (植物の元気度) |
-| :---: | :---: |
-| 真っ黒で人間の目には見えない | 緑が濃いほど植物が健康であることを示す |
-| *(※ここにプレビュー画像やTIFのスクショなどを置くと良いです)* | *(※ここに生成されたNDVIのPNG画像を置くと良いです)* |
 
 ---
 
